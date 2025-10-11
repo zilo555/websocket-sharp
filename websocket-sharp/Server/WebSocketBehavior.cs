@@ -822,7 +822,7 @@ namespace WebSocketSharp.Server
     /// </exception>
     protected void Close (ushort code, string reason)
     {
-      if (_websocket == null) {
+      if (!_registered) {
         var msg = "The session has not started yet.";
 
         throw new InvalidOperationException (msg);
