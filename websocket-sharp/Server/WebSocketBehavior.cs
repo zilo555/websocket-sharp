@@ -1270,7 +1270,7 @@ namespace WebSocketSharp.Server
     /// </exception>
     protected void Send (string data)
     {
-      if (_websocket == null) {
+      if (!_registered) {
         var msg = "The session has not started yet.";
 
         throw new InvalidOperationException (msg);
