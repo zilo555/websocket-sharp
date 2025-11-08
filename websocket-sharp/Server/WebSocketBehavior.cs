@@ -1431,15 +1431,14 @@ namespace WebSocketSharp.Server
     /// </exception>
     /// <exception cref="InvalidOperationException">
     ///   <para>
-    ///   The SendAsync method is not available when the session has not
-    ///   started yet.
+    ///   This method is not available when the session has not started yet.
     ///   </para>
     ///   <para>
     ///   -or-
     ///   </para>
     ///   <para>
-    ///   The SendAsync method is not available when the current state of
-    ///   the WebSocket interface is not Open.
+    ///   This method is not available when the current state of the WebSocket
+    ///   interface is not Open.
     ///   </para>
     /// </exception>
     protected void SendAsync (FileInfo fileInfo, Action<bool> completed)
