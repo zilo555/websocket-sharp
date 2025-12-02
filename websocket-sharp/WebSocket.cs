@@ -3545,8 +3545,7 @@ namespace WebSocketSharp
     ///   -or-
     ///   </para>
     ///   <para>
-    ///   The Connect method is not available if a series of reconnecting
-    ///   has failed.
+    ///   This method is not available if reconnection attempts have failed.
     ///   </para>
     /// </exception>
     public void Connect ()
