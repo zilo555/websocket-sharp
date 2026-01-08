@@ -68,7 +68,7 @@ namespace WebSocketSharp.Net
     private EndPointListener      _endPointListener;
     private InputState            _inputState;
     private RequestStream         _inputStream;
-    private bool                  _isSecure;
+    private bool                  _secure;
     private LineState             _lineState;
     private EndPoint              _localEndPoint;
     private static readonly int   _maxInputLength;
@@ -120,7 +120,7 @@ namespace WebSocketSharp.Net
           sslConf.CheckCertificateRevocation
         );
 
-        _isSecure = true;
+        _secure = true;
         _stream = sslStream;
       }
       else {
@@ -156,7 +156,7 @@ namespace WebSocketSharp.Net
 
     public bool IsSecure {
       get {
-        return _isSecure;
+        return _secure;
       }
     }
 
