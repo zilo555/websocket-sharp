@@ -4487,7 +4487,7 @@ namespace WebSocketSharp
     ///   </para>
     ///   <para>
     ///   This method is not available if the interface does not allow
-    ///   the header type.
+    ///   that header type.
     ///   </para>
     /// </exception>
     public void SetUserHeader (string name, string value)
