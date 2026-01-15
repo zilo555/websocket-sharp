@@ -1139,7 +1139,8 @@ namespace WebSocketSharp.Net
     /// than 65,535 characters.
     /// </exception>
     /// <exception cref="InvalidOperationException">
-    /// This instance does not allow the header.
+    /// This method is not available if the current instance does not allow
+    /// that header type.
     /// </exception>
     public void Add (string header)
     {
