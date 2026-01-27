@@ -692,11 +692,6 @@ websocket-sharp supports **RFC 6455**, and it is based on the following referenc
 - [The WebSocket API][api]
 - [Compression Extensions for WebSocket][rfc7692]
 
-Thanks for translating to japanese.
-
-- [The WebSocket Protocol 日本語訳][rfc6455_ja]
-- [The WebSocket API 日本語訳][api_ja]
-
 ## License ##
 
 websocket-sharp is provided under [The MIT License].
@@ -715,7 +710,6 @@ websocket-sharp is provided under [The MIT License].
 [The MIT License]: https://raw.github.com/sta/websocket-sharp/master/LICENSE.txt
 [Unity]: http://unity3d.com
 [api]: http://www.w3.org/TR/websockets
-[api_ja]: http://www.hcn.zaq.ne.jp/___/WEB/WebSocket-ja.html
 [context take over]: https://datatracker.ietf.org/doc/html/rfc7692#section-7.1.1
 [draft-hixie-thewebsocketprotocol-75]: http://tools.ietf.org/html/draft-hixie-thewebsocketprotocol-75
 [draft-ietf-hybi-thewebsocketprotocol-00]: http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-00
@@ -724,5 +718,4 @@ websocket-sharp is provided under [The MIT License].
 [master]: https://github.com/sta/websocket-sharp/tree/master
 [rfc2617]: http://tools.ietf.org/html/rfc2617
 [rfc6455]: http://tools.ietf.org/html/rfc6455
-[rfc6455_ja]: http://www.hcn.zaq.ne.jp/___/WEB/RFC6455-ja.html
 [rfc7692]: https://datatracker.ietf.org/doc/html/rfc7692
