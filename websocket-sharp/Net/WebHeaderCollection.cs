@@ -1176,12 +1176,14 @@ namespace WebSocketSharp.Net
       var val = idx < len - 1 ? header.Substring (idx + 1) : String.Empty;
 
       name = checkName (name, "header");
-      val = checkValue (val, "header");
 
       var headerType = getHeaderType (name);
 
-      checkRestricted (name, headerType);
       checkAllowed (headerType);
+
+      checkRestricted (name, headerType);
+
+      val = checkValue (val, "header");
 
       add (name, val, headerType);
     }
