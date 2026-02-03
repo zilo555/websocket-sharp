@@ -1124,14 +1124,14 @@ namespace WebSocketSharp.Net
     ///   -or-
     ///   </para>
     ///   <para>
-    ///   The value part of <paramref name="header"/> contains an invalid
-    ///   character.
+    ///   <paramref name="header"/> is a restricted header.
     ///   </para>
     ///   <para>
     ///   -or-
     ///   </para>
     ///   <para>
-    ///   <paramref name="header"/> is a restricted header.
+    ///   The value part of <paramref name="header"/> contains an invalid
+    ///   character.
     ///   </para>
     /// </exception>
     /// <exception cref="ArgumentNullException">
