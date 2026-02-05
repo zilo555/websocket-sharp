@@ -1335,12 +1335,14 @@ namespace WebSocketSharp.Net
     public override void Add (string name, string value)
     {
       name = checkName (name, "name");
-      value = checkValue (value, "value");
 
       var headerType = getHeaderType (name);
 
-      checkRestricted (name, headerType);
       checkAllowed (headerType);
+
+      checkRestricted (name, headerType);
+
+      value = checkValue (value, "value");
 
       add (name, value, headerType);
     }
