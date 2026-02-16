@@ -1798,13 +1798,14 @@ namespace WebSocketSharp.Net
     /// </exception>
     public void Set (HttpResponseHeader header, string value)
     {
-      value = checkValue (value, "value");
+      checkAllowed (HttpHeaderType.Response);
 
       var key = header.ToString ();
       var name = getHeaderName (key);
 
       checkRestricted (name, HttpHeaderType.Response);
-      checkAllowed (HttpHeaderType.Response);
+
+      value = checkValue (value, "value");
 
       set (name, value, HttpHeaderType.Response);
     }
