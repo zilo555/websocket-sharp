@@ -856,13 +856,13 @@ namespace WebSocketSharp.Net
         return value;
 
       if (len > 65535) {
-        var msg = "The length of the value is greater than 65,535 characters.";
+        var msg = "The length of that value is greater than 65,535 characters.";
 
         throw new ArgumentOutOfRangeException (paramName, msg);
       }
 
       if (!value.IsText ()) {
-        var msg = "The value contains an invalid character.";
+        var msg = "That value contains an invalid character.";
 
         throw new ArgumentException (msg, paramName);
       }
