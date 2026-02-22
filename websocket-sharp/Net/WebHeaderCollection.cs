@@ -728,7 +728,8 @@ namespace WebSocketSharp.Net
     /// </param>
     /// <exception cref="ArgumentException">
     ///   <para>
-    ///   <paramref name="header"/> is a restricted header.
+    ///   The set operation throws this exception if <paramref name="header"/>
+    ///   is a restricted header.
     ///   </para>
     ///   <para>
     ///   -or-
