@@ -700,8 +700,8 @@ namespace WebSocketSharp.Net
     ///   </para>
     /// </exception>
     /// <exception cref="ArgumentOutOfRangeException">
-    /// The length of <paramref name="value"/> is greater than 65,535
-    /// characters.
+    /// The set operation throws this exception if the length of
+    /// <paramref name="value"/> is greater than 65,535 characters.
     /// </exception>
     /// <exception cref="InvalidOperationException">
     /// The set operation is not available if the current instance does not
