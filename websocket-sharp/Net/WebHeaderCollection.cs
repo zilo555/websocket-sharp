@@ -1043,7 +1043,7 @@ namespace WebSocketSharp.Net
     #region Protected Methods
 
     /// <summary>
-    /// Adds a header to the collection without checking if the header is on
+    /// Adds a header to the collection without checking if that header is on
     /// the restricted header list.
     /// </summary>
     /// <param name="headerName">
