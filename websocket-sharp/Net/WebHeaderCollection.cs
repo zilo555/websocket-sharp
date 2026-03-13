@@ -1307,10 +1307,10 @@ namespace WebSocketSharp.Net
     /// Adds a header with the specified name and value to the collection.
     /// </summary>
     /// <param name="name">
-    /// A <see cref="string"/> that specifies the name of the header to add.
+    /// A <see cref="string"/> that specifies the name of a header to add.
     /// </param>
     /// <param name="value">
-    /// A <see cref="string"/> that specifies the value of the header to add.
+    /// A <see cref="string"/> that specifies the value of the header.
     /// </param>
     /// <exception cref="ArgumentException">
     ///   <para>
