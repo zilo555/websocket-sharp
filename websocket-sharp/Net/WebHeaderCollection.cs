@@ -1478,8 +1478,8 @@ namespace WebSocketSharp.Net
     /// </summary>
     /// <returns>
     ///   <para>
-    ///   An array of <see cref="string"/> that receives the values of
-    ///   the header.
+    ///   An array of <see cref="string"/> that holds the values of
+    ///   the specified header.
     ///   </para>
     ///   <para>
     ///   <see langword="null"/> if not present.
