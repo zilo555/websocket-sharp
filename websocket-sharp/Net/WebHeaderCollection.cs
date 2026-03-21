@@ -1544,7 +1544,7 @@ namespace WebSocketSharp.Net
     /// <c>false</c>.
     /// </returns>
     /// <param name="headerName">
-    /// A <see cref="string"/> that specifies the name of the header to test.
+    /// A <see cref="string"/> that specifies the name of a header to test.
     /// </param>
     /// <exception cref="ArgumentException">
     ///   <para>
