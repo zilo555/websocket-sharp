@@ -1737,6 +1737,10 @@ namespace WebSocketSharp.Net
     /// <summary>
     /// Sets the specified request header to the specified value.
     /// </summary>
+    /// <remarks>
+    /// If the specified request header is already present in the collection,
+    /// <paramref name="value"/> replaces the existing value.
+    /// </remarks>
     /// <param name="header">
     ///   <para>
     ///   One of the <see cref="HttpRequestHeader"/> enum values.
