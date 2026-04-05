@@ -1211,6 +1211,11 @@ namespace WebSocketSharp.Net
     /// Adds the specified request header with the specified value to
     /// the collection.
     /// </summary>
+    /// <remarks>
+    /// If the specified request header is already present in the collection,
+    /// <paramref name="value"/> is added to the comma-separated list of the
+    /// existing values.
+    /// </remarks>
     /// <param name="header">
     ///   <para>
     ///   One of the <see cref="HttpRequestHeader"/> enum values.
