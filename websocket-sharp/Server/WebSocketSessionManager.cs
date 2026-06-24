@@ -427,11 +427,6 @@ namespace WebSocketSharp.Server
       return ret;
     }
 
-    private bool canSet ()
-    {
-      return _state == ServerState.Ready || _state == ServerState.Stop;
-    }
-
     private void setSweepTimer (double interval)
     {
       _sweepTimer = new System.Timers.Timer (interval);
