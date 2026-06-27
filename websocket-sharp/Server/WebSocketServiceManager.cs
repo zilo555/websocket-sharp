@@ -169,7 +169,7 @@ namespace WebSocketSharp.Server
 
         WebSocketServiceHost host;
 
-        InternalTryGetServiceHost (path, out host);
+        TryGetServiceHostInternal (path, out host);
 
         return host;
       }
@@ -290,7 +290,7 @@ namespace WebSocketSharp.Server
 
     #region Internal Methods
 
-    internal bool InternalTryGetServiceHost (
+    internal bool TryGetServiceHostInternal (
       string path,
       out WebSocketServiceHost host
     )
@@ -609,7 +609,7 @@ namespace WebSocketSharp.Server
         throw new ArgumentException (msg, "path");
       }
 
-      return InternalTryGetServiceHost (path, out host);
+      return TryGetServiceHostInternal (path, out host);
     }
 
     #endregion

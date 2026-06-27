@@ -772,7 +772,7 @@ namespace WebSocketSharp.Server
 
       WebSocketServiceHost host;
 
-      if (!_services.InternalTryGetServiceHost (path, out host)) {
+      if (!_services.TryGetServiceHostInternal (path, out host)) {
         context.Close (HttpStatusCode.NotImplemented);
 
         return;
