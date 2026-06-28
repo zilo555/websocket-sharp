@@ -290,17 +290,6 @@ namespace WebSocketSharp.Server
 
     #region Internal Methods
 
-    internal bool TryGetServiceHostInternal (
-      string path,
-      out WebSocketServiceHost host
-    )
-    {
-      path = path.TrimSlashFromEnd ();
-
-      lock (_sync)
-        return _hosts.TryGetValue (path, out host);
-    }
-
     internal void Start ()
     {
       lock (_sync) {
@@ -321,6 +310,17 @@ namespace WebSocketSharp.Server
 
         _state = ServerState.Stop;
       }
+    }
+
+    internal bool TryGetServiceHostInternal (
+      string path,
+      out WebSocketServiceHost host
+    )
+    {
+      path = path.TrimSlashFromEnd ();
+
+      lock (_sync)
+        return _hosts.TryGetValue (path, out host);
     }
 
     #endregion
