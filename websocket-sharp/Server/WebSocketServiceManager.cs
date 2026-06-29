@@ -541,8 +541,7 @@ namespace WebSocketSharp.Server
     }
 
     /// <summary>
-    /// Tries to get the service host instance for a WebSocket service with
-    /// the specified path.
+    /// Tries to get the specified service host instance.
     /// </summary>
     /// <returns>
     /// <c>true</c> if the try has succeeded; otherwise, <c>false</c>.
