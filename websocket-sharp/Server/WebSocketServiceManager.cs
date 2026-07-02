@@ -558,7 +558,7 @@ namespace WebSocketSharp.Server
     /// <param name="host">
     ///   <para>
     ///   When this method returns, a <see cref="WebSocketServiceHost"/>
-    ///   instance that receives the service host instance.
+    ///   instance that holds the service host instance.
     ///   </para>
     ///   <para>
     ///   It provides the function to access the information in the service.
