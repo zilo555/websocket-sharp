@@ -561,7 +561,7 @@ namespace WebSocketSharp.Server
     ///   instance that holds the service host instance.
     ///   </para>
     ///   <para>
-    ///   It provides the function to access the information in the service.
+    ///   It provides the access to the information in the service.
     ///   </para>
     ///   <para>
     ///   <see langword="null"/> if not found.
