@@ -1096,7 +1096,7 @@ namespace WebSocketSharp.Server
     }
 
     /// <summary>
-    /// Removes a WebSocket service with the specified path.
+    /// Removes the specified WebSocket service.
     /// </summary>
     /// <remarks>
     /// The service is stopped with close status 1001 (going away)
