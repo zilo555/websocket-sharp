@@ -1319,7 +1319,7 @@ namespace WebSocketSharp.Server
     /// Stops receiving incoming requests.
     /// </summary>
     /// <remarks>
-    /// This method works if the current state of the server is Start.
+    /// This method is available when the current state of the server is Start.
     /// </remarks>
     public void Stop ()
     {
