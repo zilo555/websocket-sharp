@@ -1294,7 +1294,8 @@ namespace WebSocketSharp.Server
     /// Starts receiving incoming requests.
     /// </summary>
     /// <remarks>
-    /// This method works if the current state of the server is Ready or Stop.
+    /// This method is available when the current state of the server is
+    /// Ready or Stop.
     /// </remarks>
     /// <exception cref="InvalidOperationException">
     ///   <para>
