@@ -799,7 +799,7 @@ namespace WebSocketSharp.Server
       var either = byUser || withPort;
 
       if (!either) {
-        message = "There is no server certificate for secure connection.";
+        message = "The server certificate for a secure connection is not present.";
 
         return false;
       }
