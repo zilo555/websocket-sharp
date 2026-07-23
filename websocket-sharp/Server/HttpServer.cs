@@ -69,7 +69,7 @@ namespace WebSocketSharp.Server
 
     private System.Net.IPAddress    _address;
     private string                  _docRootPath;
-    private bool                    _isSecure;
+    private bool                    _secure;
     private HttpListener            _listener;
     private Logger                  _log;
     private int                     _port;
@@ -462,7 +462,7 @@ namespace WebSocketSharp.Server
     /// </value>
     public bool IsSecure {
       get {
-        return _isSecure;
+        return _secure;
       }
     }
 
@@ -609,7 +609,7 @@ namespace WebSocketSharp.Server
     /// </exception>
     public ServerSslConfiguration SslConfiguration {
       get {
-        if (!_isSecure) {
+        if (!_secure) {
           var msg = "The server does not provide secure connections.";
 
           throw new InvalidOperationException (msg);
@@ -841,7 +841,7 @@ namespace WebSocketSharp.Server
     {
       _address = address;
       _port = port;
-      _isSecure = secure;
+      _secure = secure;
 
       _docRootPath = "./Public";
       _listener = createListener (hostname, port, secure);
@@ -981,7 +981,7 @@ namespace WebSocketSharp.Server
         if (_state == ServerState.Start || _state == ServerState.ShuttingDown)
           return;
 
-        if (_isSecure) {
+        if (_secure) {
           string msg;
 
           if (!checkCertificate (out msg))
