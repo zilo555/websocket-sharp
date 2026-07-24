@@ -69,11 +69,11 @@ namespace WebSocketSharp.Server
 
     private System.Net.IPAddress    _address;
     private string                  _docRootPath;
-    private bool                    _secure;
     private HttpListener            _listener;
     private Logger                  _log;
     private int                     _port;
     private Thread                  _receiveThread;
+    private bool                    _secure;
     private WebSocketServiceManager _services;
     private volatile ServerState    _state;
     private object                  _sync;
