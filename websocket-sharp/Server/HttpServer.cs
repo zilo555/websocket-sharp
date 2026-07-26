@@ -610,7 +610,7 @@ namespace WebSocketSharp.Server
     public ServerSslConfiguration SslConfiguration {
       get {
         if (!_secure) {
-          var msg = "The server does not provide secure connections.";
+          var msg = "The server does not provide a secure connection.";
 
           throw new InvalidOperationException (msg);
         }
