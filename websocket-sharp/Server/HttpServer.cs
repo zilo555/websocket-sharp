@@ -594,7 +594,7 @@ namespace WebSocketSharp.Server
     }
 
     /// <summary>
-    /// Gets the configuration for secure connection.
+    /// Gets the configuration for a secure connection.
     /// </summary>
     /// <remarks>
     /// The configuration is used when the server attempts to start,
