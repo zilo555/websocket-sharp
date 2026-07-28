@@ -602,7 +602,7 @@ namespace WebSocketSharp.Server
     /// </remarks>
     /// <value>
     /// A <see cref="ServerSslConfiguration"/> that represents the
-    /// configuration used to provide secure connections.
+    /// configuration used to provide a secure connection.
     /// </value>
     /// <exception cref="InvalidOperationException">
     /// The server does not provide secure connections.
