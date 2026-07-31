@@ -806,11 +806,8 @@ namespace WebSocketSharp.Server
 
       var both = byUser && withPort;
 
-      if (both) {
-        var msg = "The server certificate associated with the port takes priority.";
-
-        _log.Warn (msg);
-      }
+      if (both)
+        message = "The server certificate associated with the port takes priority.";
 
       return true;
     }
