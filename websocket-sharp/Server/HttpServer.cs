@@ -983,6 +983,9 @@ namespace WebSocketSharp.Server
 
           if (!checkCertificate (out msg))
             throw new InvalidOperationException (msg);
+
+          if (msg != null)
+            _log.Info (msg);
         }
 
         _services.Start ();
