@@ -321,10 +321,6 @@ namespace WebSocketSharp.Server
     /// <summary>
     /// Gets or sets the scheme used to authenticate the clients.
     /// </summary>
-    /// <remarks>
-    /// The set operation works if the current state of the server is
-    /// Ready or Stop.
-    /// </remarks>
     /// <value>
     ///   <para>
     ///   One of the <see cref="WebSocketSharp.Net.AuthenticationSchemes"/>
@@ -338,6 +334,10 @@ namespace WebSocketSharp.Server
     ///   <see cref="WebSocketSharp.Net.AuthenticationSchemes.Anonymous"/>.
     ///   </para>
     /// </value>
+    /// <exception cref="InvalidOperationException">
+    /// The set operation is not available when the current state of
+    /// the server is neither Ready nor Stop.
+    /// </exception>
     public AuthenticationSchemes AuthenticationSchemes {
       get {
         return _listener.AuthenticationSchemes;
